@@ -29,8 +29,8 @@ a:hover { text-decoration: underline; }
 }
 .page {
   display: grid;
-  grid-template-columns: 248px minmax(0, 1fr);
-  gap: 54px;
+  grid-template-columns: 262px minmax(0, 1fr);
+  gap: 40px;
   max-width: 1160px;
   min-height: calc(100vh - 54px);
   margin: 0 auto;
@@ -111,3 +111,17 @@ a:hover { text-decoration: underline; }
   color: var(--accent);
   font-variant-numeric: tabular-nums;
 }
+
+.sidebar-row {
+  display: flex;
+  align-items: flex-start;
+  gap: .55em;
+}
+.sidebar-icon {
+  flex: none;
+  width: 1em;
+  height: 1em;
+  margin-top: .34em;
+  color: var(--accent);
+}
+.sidebar-row > span { min-width: 0; }
